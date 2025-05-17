@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Token</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="toggle-dark" id="toggleDark">🌙</div>
+
+  <img src="logo.png" alt="Logo" class="logo" />
+
+  <div class="content">
+    <h2>Geser Tokenmu!</h2>
+    <p>Total Token: <strong>200</strong> | 1 Token = <strong>60 DM</strong></p>
+
+    <input type="range" min="0" max="200" value="0" class="slider" id="tokenSlider" />
+
+    <div class="output">
+      Token Digunakan: <span id="usedToken">0</span><br>
+      Sisa Token: <span id="remainingToken">200</span><br>
+      DM Dibutuhkan: <span id="neededDM">0</span>
+    </div>
+  </div>
+
+  <footer>© 2025 Token Converter</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
