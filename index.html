@@ -2,30 +2,56 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kalkulator Token</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tulis bebas bg</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
-  <div class="toggle-dark" id="toggleDark">🌙</div>
-
-  <img src="logo.png" alt="Logo" class="logo" />
-
-  <div class="content">
-    <h2>Geser Tokenmu!</h2>
-    <p>Total Token: <strong>200</strong> | 1 Token = <strong>60 DM</strong></p>
-
-    <input type="range" min="0" max="200" value="0" class="slider" id="tokenSlider" />
-
-    <div class="output">
-      Token Digunakan: <span id="usedToken">0</span><br>
-      Sisa Token: <span id="remainingToken">200</span><br>
-      DM Dibutuhkan: <span id="neededDM">0</span>
+  <header>
+    <div class="nav-left">
+      <div id="mode-toggle" title="Toggle Dark Mode">
+        <span id="mode-icon">🌙</span>
+      </div>
+      <a href="https://github.com/Adam-ngoprek" target="_blank" title="GitHub Saya" aria-label="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="github-logo" />
+      </a>
     </div>
+    <div class="nav-title">Tulis bebas coyy</div>
+    <div class="nav-right">
+      <!-- Bisa diisi dengan menu lain kalau perlu -->
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>tulis disini bang</h1>
+    <form id="form-komentar">
+      <input type="text" id="nama" placeholder="dari.. " required />
+      <textarea id="komentar" placeholder="tulis apa aja serah lu..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <h2>org orng yg dah tulis </h2>
+
+    <div id="loading">
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+    </div>
+    <ul id="daftar-komentar"></ul>
+
+    <footer>
+  <div style="font-size: 12px; text-align: center; margin-bottom: 10px;">
+    <p>Nama, pesan, atau pernyataan yang tercantum bersifat bebas dan tidak dapat dipastikan berasal dari pihak tertentu. Konten ini dibuat semata-mata untuk hiburan dan tidak dimaksudkan untuk diseriusi.</p>
+  </div>
+  <p style="text-align: center;">&copy; 2025 Semua hak dilindungi.</p>
+  <div style="margin-top: 10px; text-align: center;">
+    <img src="logo.png" alt="Logo" style="height: 40px;"/>
+  </div>
+</footer>
   </div>
 
-  <footer>© 2025 Token Converter</footer>
-
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
-</html>
+  </html>
